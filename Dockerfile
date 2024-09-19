@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # Install Streamlit
-RUN pip install https://core-previews.s3-us-west-2.amazonaws.com/pr-9500/streamlit-1.38.0-py2.py3-none-any.whl
+RUN pip install -U streamlit
 
 # Remove default Nginx configuration
 RUN rm /etc/nginx/sites-enabled/default
